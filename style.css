@@ -1,0 +1,953 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 全域 border box */
+
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*Desktop*/
+.wrap{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/*表頭導覽列*/
+.header{
+    background-color: #AA0601;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	padding: 25px;
+}
+.logo a{
+	display:block;
+	width: 80px;
+	height: 49px;
+	background-image: url(images/logo.png);
+	text-indent: 101%;
+    white-space: nowrap;
+	overflow: hidden;
+}
+.menu{
+	display: flex;
+	flex-wrap: wrap;
+}
+.menu li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-style: normal;
+	font-family: Noto sans-serif;
+	display:block;
+	text-align:center;
+	padding: 10px;	
+}
+/*廣告banner*/
+.banner{
+	height: 840px;	
+	display: flex;
+	position:relative;
+}
+.banner img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.adword{
+	position:absolute;
+	top: 348px;
+	bottom: 440px;
+	left: 250px;
+	right: 50px;
+	text-align: right;
+}
+.word1{
+	font-style: normal;
+	font-size: 36px;
+	margin-bottom: 16px;
+	color: #650300;
+	font-family:Noto sans-serif ;
+}
+.word2{
+	font-weight: bold;
+	font-size: 48px;
+	color: #650300;
+	font-family: Noto sans-serif;
+}
+/*廣告四大重點*/
+.ad{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #AA06010D;
+}
+.adtitle{
+	font-family: Noto sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+	color: #650300;
+	margin-top: 60px;
+	margin-bottom: 48px;
+	text-align: center;
+}
+.adlist{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 80px;
+}
+.adlists{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+.ad img{
+	margin-bottom: 24px;
+}
+.adword1{
+	color: #650300;
+	font-family: Noto sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 8px;
+}
+.adp{
+	font-family: Noto sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
+/*經典系列鏡框*/
+.glasses{
+	max-width: 100%;
+	padding: 15px;
+}
+.glasseslist{
+	margin-bottom: 80px;
+}
+.glist1,.glist3{
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.glist2{
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	flex-direction: row-reverse;
+	margin-bottom: 30px;
+}
+.g1,.g2,.g3{
+	width:635px; 
+	height:320px;
+	margin-right:20px;
+}
+.icon1,.icon2,.icon3{
+	width:44px; 
+	height:44px;
+}
+.glistp1,.glistp2,.glistp3{
+	color: #AA0601;
+	font-size: 48px;
+	font-family: Roboto sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	margin-right: 20px;
+}
+/*聯名設計鏡框*/
+.glasses2{
+	height: 705px;
+	background-image: url(images/bg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+}
+.adtitle2{
+	font-family: Noto sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+	color: white;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.product{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+.product2 img,.product3 img{
+	width: 540spx;
+	height: 455px;
+	position: relative;
+	padding: 15px;
+}
+.p8{
+	color: #AA0601;
+	font-size: 64px;
+	font-family: Roboto sans-serif;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	bottom: 250px;
+}
+.p9{
+	color: #AA0601;
+	font-size: 64px;
+	font-family: Roboto sans-serif;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+    bottom: 250px;
+}
+/*顧客推薦*/
+.recommend{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.recommendlist{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.rlist{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 5px;
+}
+.client1,.client2,.client3,.client4{
+	width: 255px;
+	height: 460px;
+	background-color: white;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	border: 1px solid #DEE2E6;
+}
+.cimg1{
+	width: 256px;
+	height: 256px;
+	border-radius: 4px;
+}
+.cp1{
+	font-size: 14px;
+	font-weight: medium;
+	font-family: Noto sans-serif;
+	margin-top: 16px;
+	margin-left: 16px;
+	line-height: 21px;
+}
+.cp2{
+	font-size: 16px;
+	font-family: Noto sans-serif;
+	margin-top: 8px;
+	margin-left: 16px;
+	line-height: 24px;
+}
+.cp3{
+	font-size: 14px;
+	font-family: Noto sans-serif;
+	margin-top: 76px;
+	margin-bottom: 16px;
+	margin-left: 16px;
+	line-height: 21px;
+	color: #707070;
+}
+.cp4{
+	font-size: 14px;
+	font-family: Noto sans-serif;
+	margin-top: 52px;
+	margin-bottom: 16px;
+	margin-left: 16px;
+	line-height: 21px;
+	color: #707070;
+}
+/*聯絡我們*/
+.contact{
+	background-color:#AA06010D;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.adtitle3{
+	font-family: Noto sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+	color: #000000;
+	margin-top: 60px;
+	margin-bottom: 48px;
+	text-align: center;
+}
+.cp5{
+	font-size: 20px;
+	line-height: 30px;
+	font-family: Noto sans-serif;
+	text-align: left;
+}
+.formlist{
+	width: 730px;
+	margin-top:10px ;
+	margin-bottom: 40px;
+}
+input{
+	width: 100%;
+	height: 50px;
+	border: 1px solid #000000;
+	background-color:#AA06010D;
+	margin-top: 10px;
+}
+.formtitle{
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.btn{
+	margin-bottom:80px;	
+}
+/*表尾*/
+.footer{
+	background-color: #AA0601;
+}
+.contact1{
+	width: 1110px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu-1{
+	margin-top: 44px;
+}
+.menu-2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu2 a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-style: normal;
+	font-family: Noto sans-serif;
+	margin-right: 48px;
+}
+.socialmedia{
+	margin-top: 32px;
+	display: flex;
+	justify-content: space-between;
+}
+.socialmedia a{
+}
+.contact2,.contact3{
+	width: 1110px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	margin-top:16px;
+	margin-bottom: 30px;
+}
+.contact2 img,.contact3 img{
+	margin-right: 22px;
+}
+.contact2,.contact3 p{
+	font-size: 36px;
+	line-height: 54px;
+	color:white;
+}
+.contact4{
+	width: 1110px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top:1px solid white;
+	color: white;
+}
+.menu-3{
+	display: flex;
+	align-items: center;
+	margin-top: 32px;
+	margin-bottom: 39px;
+}
+.menu-3 a{
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	font-style: normal;
+	font-family: Noto sans-serif;
+}
+.contact4 p{
+	font-style: normal;
+	font-family: Noto sans-serif;
+	margin-top: 32px;
+	margin-bottom: 39px;
+}
+.menu3-1 a{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 48px;
+}
+/*Tablet*/
+@media(max-width: 768px){
+    /*表頭導覽列*/
+	.header{
+		background-color: #AA0601;
+		flex-direction: column;
+	}
+	.logo a{
+		display:block;
+		width: 80px;
+		height: 49px;
+		background-image: url(images/logo.png) no-repeat;
+		text-indent: 101%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.menu{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.menu li a{
+		width: 375px;
+		color: white;
+		text-decoration: none;
+		font-size: 20px;
+		font-style: normal;
+		font-family: Noto sans-serif;
+		display:block;
+		justify-content: center;
+		text-align:center;
+		align-items: center;
+		margin:10px auto 10px -75px;	
+	}
+	.menu li {
+		border: 1px solid white;
+		width: 50%;
+		margin:0 auto;
+	}
+	/*廣告banner*/
+    .banner{
+	    position:relative;
+	}
+	.banner img{
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+    .adword{
+	position:absolute;
+	top: 375px;
+	bottom: 440px;
+	left: 10px;
+	right:10px ;
+	text-align: right;
+    }
+    .word1{
+	font-style: normal;
+	font-size: 20px;
+	margin-bottom: 16px;
+	color: #650300;
+	font-family:Noto sans-serif ;
+    }
+    .word2{
+	font-weight: bold;
+	font-size: 48px;
+	color: #650300;
+	font-family: Noto sans-serif;
+    }
+    /*廣告四大重點*/
+    .ad{
+	background-color: #AA06010D;
+    }
+    .adtitle{
+	font-family: Noto sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	color: #650300;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+    }
+    .adlists{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	justify-content: space-around;
+    }
+    .adword1{
+	color: #650300;
+	font-family: Noto sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	}
+    .adp{
+	font-family: Noto sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+	margin-bottom: 40px;
+	}
+	/*經典系列鏡框*/
+    .glasseslist{
+		width: 100%;
+		margin-bottom: 40px;
+		padding: 5px;
+	}
+	.glist{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.glist1,.glist2,.glist3{
+		display: block;
+		margin-bottom: 15px;
+	}
+	.g1,.g2,.g3{
+		width:390px; 
+		height:168px;
+	}
+	.icon1,.icon2,.icon3{
+		display: inline-block;
+		width:37px; 
+		height:37px;
+	}
+	.glistp1,.glistp2,.glistp3{
+		display: inline-block;
+		color:#AA0601;
+		font-size: 28px;
+		font-family: Roboto sans-serif;
+		font-weight: bold;
+		font-style: italic;
+		margin-right: 37px;
+	}
+	/*聯名設計鏡框*/
+    .glasses2{
+	height: 500px;
+	background-image: url(images/bg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+    }
+    .adtitle2{
+	font-family: Noto sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	margin-bottom: 25px;
+	}
+	.product{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+    .product2 img,.product3 img{
+	width: 330px;
+	height: 278px;
+	padding: 5px;
+	}
+	.p8{
+		color: #AA0601;
+		font-size: 32px;
+		font-family: Roboto sans-serif;
+		font-weight: bold;
+		text-align: center;
+		position: relative;
+		bottom: 150px;
+	
+	}
+	.p9{
+		color: #AA0601;
+		font-size: 32px;
+		font-family: Roboto sans-serif;
+		font-weight: bold;
+		text-align: center;
+		position: relative;
+		bottom: 150px;
+	}
+	/*顧客推薦*/
+	.recommend{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.recommendlist{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+	.rlist{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 5px;
+	}
+	.client1,.client2,.client3,.client4{
+		width: 330px;
+		height: 460px;
+		background-color: white;
+		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+		border: 1px solid #DEE2E6;
+		margin-bottom: 15px;
+	}
+	.cimg1{
+		width: 330px;
+		height: 256px;
+		border-radius: 4px;
+	}
+	.cp1{
+		font-size: 14px;
+		font-weight: medium;
+		font-family: Noto sans-serif;
+		margin-top: 16px;
+		margin-left: 16px;
+		line-height: 21px;
+	}
+	.cp2{
+		font-size: 16px;
+		font-family: Noto sans-serif;
+		margin-top: 16px;
+		margin-left: 16px;
+		line-height: 24px;
+	}
+	.cp3{
+		font-size: 14px;
+		font-family: Noto sans-serif;
+		margin-top: 76px;
+		margin-bottom: 16px;
+		margin-left: 16px;
+		line-height: 21px;
+		color: #707070;
+	}
+	.cp4{
+		font-size: 14px;
+		font-family: Noto sans-serif;
+		margin-top: 52px;
+		margin-bottom: 16px;
+		margin-left: 16px;
+		line-height: 21px;
+		color: #707070;
+	}
+	/*聯絡我們*/
+    .contact{
+	    background-color:#AA06010D;
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+    }
+    .adtitle3{
+	    font-family: Noto sans-serif;
+	    font-size: 32px;
+	    font-weight: bold;
+	    color: #000000;
+	    margin-top: 60px;
+	    margin-bottom: 48px;
+	    text-align: center;
+    } 
+	.cp5{
+		font-size: 16px;
+		line-height: 24px;
+		font-family: Noto sans-serif;
+		text-align: left;
+    }
+    .formlist{
+	    width: 450px;
+	    margin-top:10px ;
+	    margin-bottom: 40px;
+    }
+    input{
+	    width: 100%;
+	    height: 50px;
+	    border: 1px solid #000000;
+	    background-color:#AA06010D;
+	    margin-top: 10px;
+    }
+    .formtitle{
+	    font-size: 14px;
+	    line-height: 21px;
+	    text-align: left;
+	    margin-top: 20px;
+	    margin-bottom: 10px;
+    }
+    .btn{
+	    margin-bottom:56px;	
+    }
+/*表尾*/
+    .footer{
+	    background-color: #AA0601;
+    }
+    .contact1{
+	    width: 650px;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    margin-left: 15px;
+    } 
+    .menu-2{
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+    }
+    .menu2 a{
+	    color: white;
+	    text-decoration: none;
+	    font-size: 14px;
+	    font-style: normal;
+	    font-family: Noto sans-serif;
+    }
+    .socialmedia{
+	    width: 120px;
+	    display: flex;
+	    justify-content: space-between;
+    }
+    .socialmedia img{
+	    width: 32px;
+	    height: 32px;
+    }
+    .contact2,.contact3{
+        width: 650px;
+	    display: flex;
+	    align-items: center;
+	    margin-top:16px;
+	    margin-bottom: 30px;
+    }
+    .contact2 img,.contact3 img{
+	    width: 18px;
+	    height: 18px;
+	    margin-right: 22px;
+    }
+    .contact2,.contact3 p{
+	    font-size: 20px;
+	    line-height: 30px;
+	    color:white;
+    }
+    .contact4{
+	    width: 650px;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    border-top:1px solid white;
+	    color: white;
+    }
+    .menu-3{
+	    display: flex;
+	    align-items: center;
+	    margin-top: 32px;
+	    margin-bottom: 30px;
+    }
+    .menu-3 a{
+	    color: white;
+	    text-decoration: none;
+	    font-size: 14px;
+	    font-style: normal;
+	    font-family: Noto sans-serif;
+    }
+    .contact4 p{
+	    font-style: normal;
+	    font-family: Noto sans-serif;
+	    margin-top: 32px;
+	    margin-bottom: 30px;
+    }
+    .menu3-1 a{
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    margin-right: 48px;
+	}
+}
+/*Mobile*/
+@media(max-width: 375px){
+	.header{
+		background-color: #AA0601;
+		flex-direction: column;
+	}
+	.logo a{
+		display:block;
+		width: 80px;
+		height: 49px;
+		background-image: url(images/logo.png) no-repeat;
+		text-indent: 101%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.menu{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.menu li a{
+		width: 375px;
+		color: white;
+		text-decoration: none;
+		font-size: 20px;
+		font-style: normal;
+		font-family: Noto sans-serif;
+		display:block;
+		text-align:center;
+		align-items: center;
+		margin:10px auto 10px -75px;	
+	}
+	.menu li {
+		border: 1px solid white;
+		width: 50%;
+		margin:0 auto;
+	}
+    /*經典系列鏡框*/
+    .glasseslist{
+		width: 360px;
+		margin-bottom: 40px;
+		padding: 5px;
+	}
+	.glist{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.glist1,.glist2,.glist3{
+		display: block;
+		margin-bottom: 15px;
+	}
+	.g1,.g2,.g3{
+		width:390px; 
+		height:168px;
+	}
+	.icon1,.icon2,.icon3{
+		width:37px; 
+		height:37px;	
+	}
+	.glistp1,.glistp2,.glistp3{
+		color:#AA0601;
+		font-size: 28px;
+		font-family: Roboto sans-serif;
+		font-weight: bold;
+		font-style: italic;
+		margin-right: 37px;
+	}
+	/*聯名設計鏡框*/
+    .glasses2{
+		width: 375px;
+		height: 719px;
+		background-image: url(images/bg.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		display: flex;
+		flex-direction: column;
+	
+		}
+		.adtitle2{
+		font-family: Noto sans-serif;
+		font-size: 32px;
+		font-weight: bold;
+		color: white;
+		text-align: center;
+		margin-bottom: 25px;
+		}
+		.product{
+		}
+		.product2 img,.product3 img{
+		width: 330px;
+		height: 278px;
+		padding: 5px;
+		}
+		.p8{
+			color: #AA0601;
+			font-size: 32px;
+			font-family: Roboto sans-serif;
+			font-weight: bold;
+			text-align: center;
+			position: relative;
+			bottom: 150px;
+		
+		}
+		.p9{
+			color: #AA0601;
+			font-size: 32px;
+			font-family: Roboto sans-serif;
+			font-weight: bold;
+			text-align: center;
+			position: relative;
+			bottom: 150px;
+		}
+}
